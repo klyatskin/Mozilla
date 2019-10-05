@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		D150BE7B234769A20083968C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150BE7A234769A20083968C /* AppDelegate.swift */; };
-		D150BE7D234769A20083968C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150BE7C234769A20083968C /* ViewController.swift */; };
 		D150BE80234769A20083968C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D150BE7E234769A20083968C /* Main.storyboard */; };
 		D150BE82234769A60083968C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D150BE81234769A60083968C /* Assets.xcassets */; };
 		D150BE85234769A60083968C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D150BE83234769A60083968C /* LaunchScreen.storyboard */; };
 		D150BE90234769A60083968C /* MozillaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150BE8F234769A60083968C /* MozillaTests.swift */; };
+		D150BEA32347869F0083968C /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150BEA22347869F0083968C /* Suggestion.swift */; };
+		D150BEA5234789590083968C /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150BEA4234789590083968C /* ErrorHandling.swift */; };
+		D150BEA923478EAF0083968C /* SuggestionFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150BEA823478EAF0083968C /* SuggestionFetch.swift */; };
+		D150BEAB2347905A0083968C /* NetworkFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150BEAA2347905A0083968C /* NetworkFetch.swift */; };
+		D150BEAD23479E0B0083968C /* SuggestionCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150BEAC23479E0B0083968C /* SuggestionCache.swift */; };
+		D150BEB12347A7330083968C /* SuggestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150BEB02347A7330083968C /* SuggestionModel.swift */; };
+		D150BEB52347C7370083968C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150BEB42347C7370083968C /* MainViewController.swift */; };
+		D150BEB8234821460083968C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D150BEB7234821460083968C /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +35,6 @@
 /* Begin PBXFileReference section */
 		D150BE77234769A20083968C /* Mozilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mozilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D150BE7A234769A20083968C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D150BE7C234769A20083968C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D150BE7F234769A20083968C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D150BE81234769A60083968C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D150BE84234769A60083968C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +42,14 @@
 		D150BE8B234769A60083968C /* MozillaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MozillaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D150BE8F234769A60083968C /* MozillaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MozillaTests.swift; sourceTree = "<group>"; };
 		D150BE91234769A60083968C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D150BEA22347869F0083968C /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
+		D150BEA4234789590083968C /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		D150BEA823478EAF0083968C /* SuggestionFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionFetch.swift; sourceTree = "<group>"; };
+		D150BEAA2347905A0083968C /* NetworkFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetch.swift; sourceTree = "<group>"; };
+		D150BEAC23479E0B0083968C /* SuggestionCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionCache.swift; sourceTree = "<group>"; };
+		D150BEB02347A7330083968C /* SuggestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionModel.swift; sourceTree = "<group>"; };
+		D150BEB42347C7370083968C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D150BEB7234821460083968C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D150BEB8234821460083968C /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +77,7 @@
 				D150BE79234769A20083968C /* Mozilla */,
 				D150BE8E234769A60083968C /* MozillaTests */,
 				D150BE78234769A20083968C /* Products */,
+				D150BEB6234821460083968C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +94,13 @@
 			isa = PBXGroup;
 			children = (
 				D150BE7A234769A20083968C /* AppDelegate.swift */,
-				D150BE7C234769A20083968C /* ViewController.swift */,
+				D150BEB42347C7370083968C /* MainViewController.swift */,
+				D150BEA4234789590083968C /* ErrorHandling.swift */,
+				D150BEAA2347905A0083968C /* NetworkFetch.swift */,
+				D150BEA823478EAF0083968C /* SuggestionFetch.swift */,
+				D150BEA22347869F0083968C /* Suggestion.swift */,
+				D150BEB02347A7330083968C /* SuggestionModel.swift */,
+				D150BEAC23479E0B0083968C /* SuggestionCache.swift */,
 				D150BE7E234769A20083968C /* Main.storyboard */,
 				D150BE81234769A60083968C /* Assets.xcassets */,
 				D150BE83234769A60083968C /* LaunchScreen.storyboard */,
@@ -94,6 +116,14 @@
 				D150BE91234769A60083968C /* Info.plist */,
 			);
 			path = MozillaTests;
+			sourceTree = "<group>";
+		};
+		D150BEB6234821460083968C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D150BEB7234821460083968C /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D150BE7D234769A20083968C /* ViewController.swift in Sources */,
 				D150BE7B234769A20083968C /* AppDelegate.swift in Sources */,
+				D150BEAB2347905A0083968C /* NetworkFetch.swift in Sources */,
+				D150BEB12347A7330083968C /* SuggestionModel.swift in Sources */,
+				D150BEAD23479E0B0083968C /* SuggestionCache.swift in Sources */,
+				D150BEA5234789590083968C /* ErrorHandling.swift in Sources */,
+				D150BEA32347869F0083968C /* Suggestion.swift in Sources */,
+				D150BEA923478EAF0083968C /* SuggestionFetch.swift in Sources */,
+				D150BEB52347C7370083968C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
