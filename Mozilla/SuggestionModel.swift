@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+typealias Suggestion = String
+typealias Suggestions = [Suggestion]
+
 
 class SuggestionModel {
     
